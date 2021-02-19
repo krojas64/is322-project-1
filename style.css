@@ -1,0 +1,83 @@
+body {
+    background-color: #ff7cb9;
+    min-height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+
+#information-holder {
+    background-color: #e8e8e8;
+    min-height: 100vh;
+    width: 1366px;
+    display: flex;
+    margin: auto;
+    
+}
+
+.support-info {
+    background-color: #b751cc;
+    min-height: 100vh;
+    flex: 0 0 150px;
+}
+
+.support-info a {
+	display: block;
+	padding: 15px;
+	text-align: center;
+	color: white;
+	font-family: sans-serif;
+	text-decoration: none;
+}
+
+
+
+#main-text {
+    flex: 1 1 150px;
+    color:blue;
+}
+/* Container used to hold the squares/info boxes */
+#holder {
+    margin: 10px 15px;
+    flex: 1 1 150px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Allows squares to wrap to next level if no more room on first level */
+#holder.fit {
+    flex-wrap: wrap;
+}
+/* Defines what the square is and flex properties */
+.square {
+    flex: 0 0 250px;
+    height: 250px;
+    background-color: crimson;
+    border: solid black;
+    margin: 10px
+}
+
+/* Media Queries used to determine what the page will look like at certain screen resolutions */
+@media only screen and (max-width: 1300px) {
+	#information-holder {
+        width: 1000px;
+    }
+}
+
+@media only screen and (min-width: 780px) and (max-width: 1050px) {
+	#information-holder {
+        width: 720px;
+    }
+}
+
+@media only screen and (min-width: 540px) and (max-width: 779px) {
+	#information-holder {
+        width: 480px;
+    }
+}
+
+@media only screen and (max-width: 539px) {
+    #information-holder {
+        width: 360px;
+    }
+}
