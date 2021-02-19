@@ -1,6 +1,6 @@
 body {
-    background-color: #ff7cb9;
-    min-height: 100vh;
+    background-color: #64e0ad;
+    min-height: 100%;
 	margin: 0;
 	padding: 0;
 }
@@ -15,20 +15,27 @@ body {
 }
 
 .support-info {
-    background-color: #b751cc;
-    min-height: 100vh;
+    background-color: #00a700;
+    min-height: 100%;
     flex: 0 0 150px;
+    display: block;
+    text-align: center;
 }
 
 .support-info a {
 	display: block;
-	padding: 15px;
-	text-align: center;
+	padding: 10px;
 	color: white;
 	font-family: sans-serif;
-	text-decoration: none;
+	
 }
 
+label {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    font-family: sans-serif;
+}
 
 
 #main-text {
@@ -50,8 +57,8 @@ body {
 }
 /* Defines what the square is and flex properties */
 .square {
-    flex: 0 0 250px;
-    height: 250px;
+    flex: 0 0 200px;
+    height: 200px;
     background-color: crimson;
     border: solid black;
     margin: 10px
@@ -60,7 +67,17 @@ body {
 /* Media Queries used to determine what the page will look like at certain screen resolutions */
 @media only screen and (max-width: 1300px) {
 	#information-holder {
+        flex-direction: column;
         width: 1000px;
+    }
+
+    .support-info {
+        min-height: 30px;
+		flex: 0 0 35px;
+    }
+
+    .support-info a {
+        display:inline-block;
     }
 }
 
@@ -68,16 +85,35 @@ body {
 	#information-holder {
         width: 720px;
     }
+
+    .support-info {
+        min-height: 35px;
+		flex: 0 0 35px;
+    }
+
+    .support-info a {
+        display:inline-block;
+    }
 }
 
 @media only screen and (min-width: 540px) and (max-width: 779px) {
 	#information-holder {
         width: 480px;
     }
+
+    .support-info {
+        min-height: 75px;
+		flex: 0 0 35px;
+    }
 }
 
 @media only screen and (max-width: 539px) {
     #information-holder {
         width: 360px;
+    }
+
+    .support-info {
+        min-height: 75px;
+		flex: 0 0 35px;
     }
 }
