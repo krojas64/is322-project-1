@@ -58,10 +58,15 @@ label {
 /* Defines what the square is and flex properties */
 .square {
     flex: 0 0 200px;
-    height: 200px;
-    background-color: crimson;
+    height: 260px;
+    background-color: rgb(255, 255, 255);
     border: solid black;
     margin: 10px
+}
+
+.desc {
+    font-family: sans-serif;
+    padding: 3px;
 }
 
 /* Media Queries used to determine what the page will look like at certain screen resolutions */
