@@ -8,7 +8,7 @@ body {
 #information-holder {
     background-color: #e8e8e8;
     min-height: 100vh;
-    width: 1366px;
+    width: 1280px;
     display: flex;
     margin: auto;
     
@@ -30,9 +30,14 @@ body {
 	
 }
 
+.selection {
+    display: inline-block;
+    padding: 6px;
+}
+
 label {
     display: inline-block;
-    padding: 10px;
+    padding: 2px;
     color: white;
     font-family: sans-serif;
 }
@@ -61,7 +66,7 @@ label {
     height: 260px;
     background-color: rgb(255, 255, 255);
     border: solid black;
-    margin: 10px
+    margin: 10px;
 }
 
 .desc {
@@ -77,7 +82,7 @@ label {
     }
 
     .support-info {
-        min-height: 30px;
+        min-height: 40px;
 		flex: 0 0 35px;
     }
 
@@ -92,7 +97,7 @@ label {
     }
 
     .support-info {
-        min-height: 65px;
+        min-height: 40px;
 		flex: 0 0 35px;
     }
 
@@ -110,6 +115,21 @@ label {
         min-height: 75px;
 		flex: 0 0 35px;
     }
+
+    .square {
+        flex: 1 1 200px;
+        display: flex;
+        height: 150px;
+        background-color: rgb(255, 255, 255);
+        border: solid black;
+        margin: 10px;
+        
+    }
+
+    img {
+        max-width: 150px;
+        max-height: 150px;
+    }
 }
 
 @media only screen and (max-width: 539px) {
@@ -118,7 +138,22 @@ label {
     }
 
     .support-info {
-        min-height: 105px;
+        min-height: 110px;
 		flex: 0 0 35px;
+    }
+
+    .square {
+        flex: 1 1 200px;
+        display: flex;
+        height: 100px;
+        background-color: rgb(255, 255, 255);
+        border: solid black;
+        margin: 10px;
+        
+    }
+
+    img {
+        max-width: 100px;
+        max-height: 100px;
     }
 }
